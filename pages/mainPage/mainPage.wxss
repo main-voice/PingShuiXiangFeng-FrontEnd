@@ -1,0 +1,112 @@
+/* pages/mainPage/mainPage.wxss */
+
+/*背景图（上）*/
+.topBgImg{
+    z-index: -1;
+    position: absolute;
+    width:100%;
+    height: 30%;
+}
+
+/*背景图（下）*/
+.downBgImg{
+    z-index:-1;
+    position: absolute;
+    top:30%;
+    width:100%;
+    height: 70%;
+}
+
+/*用户类型*/
+.userTypeInfo{
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    font-size:30rpx;
+    right:30rpx;
+    flex-wrap: wrap;
+    top: 5rpx;
+}
+
+.levelTypeInfo{
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    font-size:30rpx;
+    right:30rpx;
+    flex-wrap: wrap;
+    top: 55rpx;
+}
+
+/*主功能面板（包括约球、积分排行、社区交流、比赛报名四个主功能）*/
+.mainPanel{
+    display: grid;
+    position: absolute;
+    top:520rpx;
+    justify-content: center;
+}
+
+/*主功能分面板，一个该分面板包含一行中的两个主功能*/
+.mainOperationPanel{
+    display: flex;
+    position:relative;
+    width: 550rpx;
+}
+
+/*主功能按键*/
+.mainOperationButton{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    left:100rpx;
+    right:100rpx;
+    flex-wrap: wrap;
+}
+
+/*主功能按键中的图片*/
+.mainOperationImg{
+    display: flex;
+    position:relative;
+    height:170rpx;
+    width: 170rpx;
+    justify-content: center;
+}
+
+/*主功能按键中的语言提示*/
+.mainOperationTips{
+    display: flex;
+    position:relative;
+    color: blue;
+    justify-content: center;
+    font-size: 40rpx;
+
+}
+
+/*页面最下方的功能面板*/
+.bottomPanel{
+    display: flex;
+    position: absolute;
+    width: 700rpx;
+    left:30rpx;
+    top:1300rpx;
+}
+
+
+/*基本操作按键*/
+.basicOperationButton{
+  display: flex;
+  position: relative;
+  font-size: 25rpx;
+  color: gray;
+  justify-content: center;
+  
+  background: linear-gradient(to left, #ead6ee, #a0f1ea);
+}
+
+
+
+
+/*按键点击态*/
+.buttonHoverClass{
+  background: linear-gradient(to right, #ead6ee, #a0f1ea);
+}

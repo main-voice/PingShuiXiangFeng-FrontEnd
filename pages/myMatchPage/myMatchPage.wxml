@@ -1,0 +1,30 @@
+<!--pages/myMatchPage/myMatchPage.wxml-->
+
+
+<view>
+    <!--上方的背景图-->
+    <image class = "topBgImg" src = "/images/topBg3.jpg"></image>
+
+    <!--显示功能面板-->
+    <view class = "operationPanel">
+        <text class = "matchInfoTitleTips">比赛信息</text>
+        <!--显示比赛信息-->
+        <view class = "matchPanel" style = "opacity:{{0.7}};">
+            <button hover-class = "buttonHoverClass" style = "width:250px; height:auto" class = "matchInfoButton" wx:for = "{{matchInfo}}" wx:key = "*this" wx:for-item = "itemName" >
+                <text class = "matchTips">名称：{{itemName.matchName}}</text>
+                <text class = "matchTips">时间：{{itemName.matchDate}}</text>
+                <text class = "matchTips">地点：{{itemName.matchAddress}}</text>
+                <text class = "matchTips">人数：{{itemName.currentNum}}/{{itemName.totalNum}}</text>
+            </button>
+            
+        </view>
+        
+    </view>
+<!--显示返回键-->
+<view class = "goBackPanel">
+            <button hover-class = "buttonHoverClass" bindtap = "goBackToMainPage" class = "gobackButton" style = "width:100px">
+                <text class = "goBackTips">返回</text>
+            </button>
+        </view>
+</view>
+

@@ -1,0 +1,24 @@
+<!--pages/Message/Message.wxml-->
+
+
+<view class="div">
+        <view class = "title" style="align-self: center;">
+                <text>标题</text>
+                <text>日期</text>
+        </view>
+        
+        <text class = 'divider' >------------精华消息------------</text>
+
+
+        <view class ="messageItem" wx:for="{{pinMessage}}" style="align-self: center;">
+                <view>{{item.title}}</view>
+                <view>{{item.data}}</view>
+        </view>
+
+        <text class = 'divider' >------------常规消息------------</text>
+
+        <view class ="messageItem" wx:for="{{normalMessage}}" style="align-self: center;">
+                <view>{{item.title}}</view>
+                <view class="user">{{item.data}}</view>
+        </view>
+</view>

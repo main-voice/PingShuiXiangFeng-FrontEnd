@@ -1,0 +1,86 @@
+/* pages/gamePage/gamePage.wxss */
+
+/*背景图（上）*/
+.topBgImg{
+  z-index: -1;
+  position: absolute;
+  width:100%;
+  height: 30%;
+}
+
+/*背景图（下）*/
+.downBgImg{
+  z-index:-1;
+  position: absolute;
+  top:30%;
+  width:100%;
+  height: 70%;
+}
+
+/*功能面板*/
+.OperationPanel{
+    display: flex;
+    position: absolute;
+    top:40%;
+    width:90%;
+    height:30%;
+    flex-wrap: wrap;
+}
+/*按键设置*/
+.OperationButton{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+/*按键图像*/
+.OperationImg{
+    display: flex;
+    position:relative;
+    height:120rpx;
+    width: 120rpx;
+    justify-content: center;
+}
+/*按键提示*/
+.OperationTips{
+    display: flex;
+   position:relative;
+    color: rgba(63, 61, 61, 0.781);
+    align-items: center;
+    justify-content: center;
+    font-size: 34rpx;
+}
+/*返回键面板*/
+.goBackPanel{
+  display: flex;
+  position: absolute;
+  top:1350rpx;
+  width:100%;
+  flex-wrap: wrap;
+  left:30%;
+  justify-content: right;
+}
+/*返回按键*/
+.gobackButton{
+    display: flex;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20rpx; 
+}
+
+
+/*按键提示*/
+.goBackTips{
+  display: flex;
+ position:relative;
+  color: rgba(63, 61, 61, 0.781);
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+/*按键点击态*/
+.buttonHoverClass{
+  background: linear-gradient(to right, #ead6ee, #a0f1ea);
+}

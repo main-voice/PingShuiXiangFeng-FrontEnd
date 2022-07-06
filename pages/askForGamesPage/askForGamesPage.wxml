@@ -1,0 +1,52 @@
+<!--pages/askForGamesPage/askForGames.wxml-->
+
+<view>
+    <!--上方的背景图-->
+    <image class = "topBgImg" src = "/images/topBg3.jpg"></image>
+    
+
+    <!--显示功能面板-->
+    <view class = "operationPanel">
+        <!--显示筛选选项-->
+        <view class = "selectPanel">
+            <picker style = "width:80px;" class = "selectPicker" mode = "selector" 
+                range = "{{campusInfo}}" 
+                value = "0">
+                <text class = "pickerTips">{{selectData[0]}}</text>
+            </picker>
+            <picker style = "width:80px;" class = "selectPicker" mode = "date" 
+                start = "2000-01-01"
+                end = "2100-01-01"
+                fields = "day">
+                <text class = "pickerTips">{{selectData[1]}}</text>
+            </picker>
+            <picker style = "width:80px;" class = "selectPicker" mode = "selector"
+                range = "{{addressInfo}}"
+                value = "0">
+                <text class = "pickerTips">{{selectData[2]}}</text>
+            </picker>
+        </view>
+        <!--显示筛选按键-->
+        <button style="top: 50%;" hover-class = "buttonHoverClass" style = "width:auto; height:auto " class = "selectButton">
+            <text class = "selectTips">筛选</text>
+        </button>
+
+        <!--显示房间信息-->
+        <view class = "roomPanel" style = "opacity:{{0.7}};">
+            <button hover-class = "buttonHoverClass" style = "width:250px" class = "roomInfoButton" wx:for = "{{roomInfo}}" wx:key = "*this" wx:for-item = "itemName" >
+                <text class = "roomTips">名称：{{itemName.roomName}}</text>
+                <text class = "roomTips">时间：{{itemName.gameDate}}</text>
+                <text class = "roomTips">地点：{{itemName.gameAddress}}</text>
+                <text class = "roomTips">人数：{{itemName.currentNum}}/{{itemName.totalNum}}</text>
+            </button>
+            
+        </view>
+        <!--显示返回键-->
+        <view class = "goBackPanel">
+            <button hover-class = "buttonHoverClass" bindtap = "goBackToLastPage" class = "gobackButton" style = "width: 100px;">
+                <text class = "goBackTips">返回</text>
+            </button>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,11 @@
+<!--pages/login/register.wxml-->
+<!--下方背景图-->
+<image class="downBgImg" src="/images/loginBg1.jpg" style="opacity: 90%" mode="widthFix"></image>
+
+<view style="align-self: center;">
+    <text style="color: #f06a6a; align-self: center; font-size: 70rpx; font-weight: 900;" >乒水相逢</text>
+</view>
+
+<view style="display: flex; flex-direction: column;">
+    <button class="btn" bindtap="goToLogin" style="color: floralwhite; width: 30% !important; top: 80%;">登 录</button>
+</view>

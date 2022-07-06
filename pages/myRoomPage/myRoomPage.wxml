@@ -1,0 +1,30 @@
+<!--pages/myRoomPage/myRoomPage.wxml-->
+
+
+<view>
+    <!--上方的背景图-->
+    <image class = "topBgImg" src = "/images/topBg3.jpg"></image>
+
+
+    <!--显示功能面板-->
+    <view class = "operationPanel">
+        <text class = "roomInfoTitleTips">房间信息</text>
+        <!--显示房间信息-->
+        <view class = "roomPanel" style = "opacity:{{0.7}};">
+            <button hover-class = "buttonHoverClass" style = "width:250px; height:auto" class = "roomInfoButton" wx:for = "{{roomInfo}}" wx:key = "*this" wx:for-item = "itemName" >
+                <text class = "roomTips">名称：{{itemName.roomName}}</text>
+                <text class = "roomTips">时间：{{itemName.gameDate}}</text>
+                <text class = "roomTips">地点：{{itemName.gameAddress}}</text>
+                <text class = "roomTips">人数：{{itemName.currentNum}}/{{itemName.totalNum}}</text>
+            </button>
+            
+        </view>
+        
+    </view>
+<!--显示返回键-->
+<view class = "goBackPanel">
+            <button hover-class = "buttonHoverClass" bindtap = "goBackToMainPage" class = "gobackButton" style = "width:100px">
+                <text class = "goBackTips">返回</text>
+            </button>
+        </view>
+</view>

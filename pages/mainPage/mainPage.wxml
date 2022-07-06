@@ -1,0 +1,49 @@
+<!--pages/mainPage/mainPage.wxml-->
+<view>
+    
+    <!--上方的背景图-->
+    <image class = "topBgImg" src = "/images/topBg1.png" mode = "widthFix" ></image>
+    
+    <!--先显示-用户信息-->
+    <text class = "userTypeInfo" >用户类型: {{userType}}</text>
+    <text class = "levelTypeInfo" >水平等级: {{levelType}}</text>
+    
+
+    <!--显示页面中间的几个主要的功能按键-->
+    <view class = "mainPanel">
+        <!--第一行-->
+        <view class = "mainOperationPanel">
+            <!--约球按键-->
+            <button bindtap = "goToGamePage" class="mainOperationButton">
+                <image class = "mainOperationImg" src = "/images/game.png"></image>
+                <text class = "mainOperationTips">约球</text>
+            </button>
+            <!--积分排行按键-->
+            <button bindtap = "goToRankPage" class = "mainOperationButton">
+                <image class = "mainOperationImg" src = "/images/rank.png"></image>
+                <text class = "mainOperationTips">积分排行</text>
+            </button>
+        </view>
+
+        <!--显示第二行-->
+        <view class = "mainOperationPanel">
+            <!--社区交流按键-->
+            <button bindtap = "goToCommunityPage" class = "mainOperationButton">
+                <image class = "mainOperationImg" src = "/images/community.png"></image>
+                <text class = "mainOperationTips">社区交流</text>
+            </button>
+            <!--比赛-->
+            <button bindtap = "goToMatchPage" class = "mainOperationButton">
+                <image class = "mainOperationImg" src = "/images/match.png"></image>
+                <text class = "mainOperationTips">比赛</text>
+            </button>
+        </view>
+    </view>
+
+    <!--显示最下方的界面-->
+    <view class = "bottomPanel">
+        <!--显示几个基本按键（个人信息、消息通知）-->
+        <button bindtap="goToProfile" hover-class = "buttonHoverClass" style = "opacity:{{0.75}}; width:30%" class = "basicOperationButton">个人信息</button>
+        <button bindtap="goToMessage" hover-class = "buttonHoverClass" style = "opacity:{{0.75}}; width:30%" class = "basicOperationButton">消息通知</button>
+    </view>
+</view>

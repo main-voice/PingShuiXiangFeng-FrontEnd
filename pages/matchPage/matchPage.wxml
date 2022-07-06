@@ -1,0 +1,36 @@
+<!--pages/matchPage/matchPage.wxml-->
+
+
+<view>
+    <!--上方的背景图-->
+     <image class = "topBgImg" src = "/images/topBg2.jpg"></image>
+    
+    <!--显示功能面板-->
+    <view class = "OperationPanel">
+        <!--比赛大厅-->
+        <button bindtap = "goToMatchHallPage" class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/matchHall.png"></image>
+            <text class = "OperationTips">比赛大厅</text>
+        </button>
+        <!--我的比赛-->
+        <button bindtap = "goToMyMatchPage"  class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/myMatch.png"></image>
+            <text class = "OperationTips">我的比赛</text>
+        </button>
+        <!--发布比赛-->
+        <button bindtap = "goToCreateMatch"  class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/createRoom.png"></image>
+            <text class = "OperationTips">发布比赛</text>
+        </button>
+    </view>
+    
+    <!--显示返回键-->
+    <view class = "goBackPanel">
+        <button hover-class = "buttonHoverClass" bindtap = "goBackToMainPage" class = "gobackButton" style = "width: 100px;">
+            <text class = "goBackTips">返回</text>
+        </button>
+    </view>
+    
+
+
+</view>

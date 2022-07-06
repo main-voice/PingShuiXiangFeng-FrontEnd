@@ -1,0 +1,29 @@
+<!--pages/Community/Community.wxml-->
+
+<!--上方背景图-->
+<image class="topBgImg" src="/images/topBg1.jpg" style="opacity: 70%;" mode="widthFix"></image>
+
+
+<view class='page_row' bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchicon" size='20' type='search'></icon>
+      <input type="text" disabled placeholder="请输入关键字" value="{{searchValue}}" />
+    </view>
+  </view>
+  <button class='sousuo' style="width: 150rpx; size: mini; text-align: center;">搜索</button>
+</view>
+
+
+<view class="post" style="align-self: center;" wx:for="{{postList}}">
+
+  {{item.title}}
+
+  <text>作者：{{item.author}}</text>
+
+  <text class="post_info" style="font-size: 30rpx;">阅读量：{{item.watchCount}} 点赞：{{item.thumbCount}}</text>
+
+  <button class="viewAll" style="width: 150rpx; size: mini; text-align: center;">
+    <text style="font-size: 30rpx; align-items: center; align-self: center;">查看全部</text>
+  </button>
+</view>

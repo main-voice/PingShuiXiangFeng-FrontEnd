@@ -1,0 +1,48 @@
+/* pages/createMatch/createMatch.wxss */
+
+.row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    align-self: center;
+    margin-top: 5rpx;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.Text {
+    color: #fa8072;
+    margin: 20rpx;
+}
+
+.Input {
+    border: 2rpx;
+    margin: 10rpx;
+    box-shadow: 0 0 3px #000;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    padding: 5rpx;
+}
+
+.downBgImg {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    
+    width: 100%;
+    top: 52%;
+   
+}
+
+.btn {
+    border: 4rpx;
+    border-color:rgb(107, 107, 107);
+    border-style: solid;
+    border-radius: 20rpx;
+    padding: 0%;
+}

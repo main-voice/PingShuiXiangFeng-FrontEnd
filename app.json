@@ -1,0 +1,28 @@
+{
+    "pages": [
+        "pages/login/register",
+        "pages/Community/Community",
+        "pages/Message/Message",
+        "pages/askForGamesPage/askForGamesPage",
+        "pages/rank/rank",
+        "pages/createRoom/createRoom",
+        "pages/createMatch/createMatch",
+        "pages/mainPage/mainPage",
+        "pages/myInfo/myInfo",
+        "pages/gamePage/gamePage",
+        "pages/login/login",
+        "pages/myRoomPage/myRoomPage",
+        "pages/matchPage/matchPage",
+        "pages/myMatchPage/myMatchPage",
+        "pages/matchHallPage/matchHallPage"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "乒水相逢",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

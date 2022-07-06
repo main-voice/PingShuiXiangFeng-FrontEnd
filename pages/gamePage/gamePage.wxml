@@ -1,0 +1,35 @@
+<!--pages/gamePage/gamePage.wxml-->
+
+<view>
+    <!--上方的背景图-->
+     <image class = "topBgImg" src = "/images/topBg2.jpg"></image>
+    
+    <!--显示功能面板-->
+    <view class = "OperationPanel">
+        <!--找人约球-->
+        <button bindtap = "goToAskForGamesPage" class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/askForGames.png"></image>
+            <text class = "OperationTips">找人约球</text>
+        </button>
+        <!--我的房间-->
+        <button bindtap = "goToMyRoomPage"  class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/myRoom.png"></image>
+            <text class = "OperationTips">我的房间</text>
+        </button>
+        <!--创建房间-->
+        <button bindtap = "goToCreateRoom" class = "OperationButton" style = "width: 210px;">
+            <image class = "OperationImg" src = "/images/createRoom.png"></image>
+            <text class = "OperationTips">创建房间</text>
+        </button>
+    </view>
+    
+    <!--显示返回键-->
+    <view class = "goBackPanel">
+        <button hover-class = "buttonHoverClass" bindtap = "goBackToMainPage" class = "gobackButton" style = "width: 100px;">
+            <text class = "goBackTips">返回</text>
+        </button>
+    </view>
+    
+
+
+</view>

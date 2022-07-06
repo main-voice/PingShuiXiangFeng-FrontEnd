@@ -1,0 +1,148 @@
+/* pages/askForGamesPage/askForGames.wxss */
+
+
+/*背景图（上）*/
+.topBgImg{
+  z-index: -1;
+  position: absolute;
+  width:100%;
+  height: 30%;
+}
+
+/*背景图（下）*/
+.downBgImg{
+  z-index:-1;
+  position: absolute;
+  top:30%;
+  width:100%;
+  height: 70%;
+}
+/*功能面板*/
+.operationPanel{
+    display: flex;
+    position: absolute;
+    top:30%;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*筛选面板*/
+.selectPanel{
+    display: flex;
+    position: absolute;
+    width:93%;
+    top:70%;
+    height:90%;
+    justify-content: center;
+    column-gap: 5%;
+}
+/*选择栏*/
+.selectPicker{
+    display: flex;
+    position: relative;
+    background: white;
+    border: 1px solid black;
+    border-radius: 2px;  
+    justify-content: center;
+}
+/*选择栏文字*/
+.pickerTips{
+    display: flex;
+    position:relative;
+    color: rgba(63, 61, 61, 0.781);
+    align-items: center;
+    justify-content: center;
+    font-size: 35rpx;
+}
+
+/*筛选按钮*/
+.selectButton{
+    display: flex;
+    position: relative;
+    /*left:180rpx;*/
+    top:140rpx;
+    border: 1px solid black;
+    border-radius: 2px;  
+    background-color: white;
+    align-self: center;
+}
+/*筛选按钮的文字提示*/
+.selectTips{
+    display: flex;
+    position:relative;
+    color: rgba(63, 61, 61, 0.781);
+    align-items: center;
+    justify-content: center;
+    font-size: 25rpx;
+}
+
+/*显示房间信息的面板*/
+.roomPanel{
+  display: flex;
+  position: absolute;
+  top:400%;
+  width:110%;
+  flex-wrap: wrap;
+  row-gap: 40rpx;
+}
+/*显示一个房间的信息*/
+.roomInfoButton{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20rpx;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/*房间信息文字格式*/
+.roomTips{
+    display: flex;
+    position:relative;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 25rpx;
+    justify-content: left;
+}
+
+/*按键点击态*/
+.buttonHoverClass{
+    background: linear-gradient(to right, #ead6ee, #a0f1ea);
+}
+
+
+/*返回键面板*/
+.goBackPanel{
+  display: flex;
+  position: absolute;
+  top:1000rpx;
+  width:100%;
+  flex-wrap: wrap;
+  left:30%;
+  justify-content: right;
+}
+/*返回按键*/
+.gobackButton{
+    display: flex;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    margin: 40rpx;
+}
+
+
+/*按键提示*/
+.goBackTips{
+    display: flex;
+    position:relative;
+    color: rgba(63, 61, 61, 0.781);
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+}

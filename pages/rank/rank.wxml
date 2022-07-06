@@ -1,0 +1,18 @@
+<!--pages/rank/rank.wxml-->
+
+<text class = 'Text' >积分排行</text>
+<text class = 'Text' >----------------------</text>
+
+<view class="div">
+        <view class="title" style="align-self: center;">
+                <text>排名</text>
+                <text>用户名</text>
+                <text>积分</text>
+        </view>
+
+        <view class ="userItem" wx:for="{{userRank}}" style="align-self: center;">
+                <view class="user">{{index+1}}</view>
+                <view>{{item.name}}</view>
+                <view class="user">{{item.score}}</view>
+        </view>
+</view>

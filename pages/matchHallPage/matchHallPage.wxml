@@ -1,0 +1,54 @@
+<!--pages/matchHallPage/matchHallPage.wxml-->
+
+
+<view>
+    <!--上方的背景图-->
+    <image class = "topBgImg" src = "/images/topBg3.jpg"></image>
+
+
+    <!--显示功能面板-->
+    <view class = "operationPanel">
+        <!--显示筛选选项-->
+        <view class = "selectPanel">
+            <picker style = "width:80px;" class = "selectPicker" mode = "selector" 
+                range = "{{campusInfo}}" 
+                value = "0">
+                <text class = "pickerTips">{{selectData[0]}}</text>
+            </picker>
+            <picker style = "width:80px;" class = "selectPicker" mode = "date" 
+                start = "2000-01-01"
+                end = "2100-01-01"
+                fields = "day">
+                <text class = "pickerTips">{{selectData[1]}}</text>
+            </picker>
+            <picker style = "width:80px;" class = "selectPicker" mode = "selector"
+                range = "{{addressInfo}}"
+                value = "0">
+                <text class = "pickerTips">{{selectData[2]}}</text>
+            </picker>
+        </view>
+        <!--显示筛选按键-->
+        <button hover-class = "buttonHoverClass" style = "width:auto; height:auto" class = "selectButton">
+            <text class = "selectTips">筛选</text>
+        </button>
+
+        <!--显示比赛信息-->
+        <view class = "matchPanel" style = "opacity:{{0.7}};">
+            <button hover-class = "buttonHoverClass" style = "width:250px" class = "matchInfoButton" wx:for = "{{matchInfo}}" wx:key = "*this" wx:for-item = "itemName" >
+                <text class = "matchTips">名称：{{itemName.matchName}}</text>
+                <text class = "matchTips">时间：{{itemName.matchDate}}</text>
+                <text class = "matchTips">地点：{{itemName.matchAddress}}</text>
+                <text class = "matchTips">人数：{{itemName.currentNum}}/{{itemName.totalNum}}</text>
+            </button>
+            
+        </view>
+        <!--显示返回键-->
+        <view class = "goBackPanel">
+            <button hover-class = "buttonHoverClass" bindtap = "goBackToMainPage" class = "gobackButton" style = "width: 100px;">
+                <text class = "goBackTips">返回</text>
+            </button>
+        </view>
+    </view>
+
+</view>
+

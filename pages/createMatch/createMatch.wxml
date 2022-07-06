@@ -1,0 +1,39 @@
+<!--pages/createMatch/createMatch.wxml-->
+
+<view class="col">
+    <view class="row">
+        <text class="Text">比赛名称</text>
+        <input class = "Input" type="text" placeholder="请输入房间名"/>
+    </view>
+
+    <view class="row">
+        <text class="Text">比赛地点</text>
+        <input class = "Input" type="text" placeholder="请选择校区"/>
+    </view>
+
+    <view class="row">
+        <text class="Text">人数上限</text>
+        <input class = "Input" type="text" placeholder="请输入房间最大人数"/>
+    </view>
+
+    <view class="row">
+        <text class="Text">开始时间</text>
+        <input class = "Input" type="text" placeholder="请输入比赛截止时间"/>
+    </view>
+
+    <view class="row">
+        <text class="Text">截止时间</text>
+        <input class = "Input" type="text" placeholder="请输入比赛截止时间"/>
+    </view>
+
+    <view class="row">
+        <text class="Text">奖品设置</text>
+        <input class = "Input" type="text" placeholder="请输入比赛奖品"/>
+    </view>
+</view>
+
+<button class = "btn" style="width: 20%;">
+    <text class="Text" style="font-weight: 500;" >创建</text>
+</button>
+
+<image class="downBgImg" src="/images/loginBg1.jpg" style="align-self: center;" mode="heightFix"></image>
